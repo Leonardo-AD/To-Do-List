@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <meta name="author" content="Leonardo Alves - GitHub: Leonardo-AD">
+    <meta name="description" content="Uma lista de tarefas simples, prática e eficaz">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Lato:wght@300&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/to-do-list-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./script.js"></script>
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <h1 id="brand-name">To Do List</h1>
+
+        <button onclick="changeTheme()" class="dark-mode" id="toggle-theme-button"><span id="iconTheme" class="material-symbols-outlined">nightlight</span></button>
+    </header>    
+    
+    <main>
+        <h2>Adicione items em sua lista.</h2>
+
+        <form action="#" id="add-items-form">
+            <input type="text" id="text-input" placeholder="Digite algo">
+            <input type="button" id="submit-input" onclick="addItems()" value="Adicionar">
+        </form>
+        
+        <article id="items-list">
+            <span class="material-symbols-outlined" id="checkbox" onclick="checkItem()"></span><p class="item-list" id="item-list"></p>
+            <span class="material-symbols-outlined" id="delete" onclick="deleteItem()"></span>
+        </article>
+        <!--onclick="checkItem()"  onclick="deleteItem()"-->
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/Leonardo-AD" target="_blank" alt="Ícone do Github" title="Clique para acessar meu perfil no Github"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/leonardo-alves-877368165/" target="_blank" alt="Ícone do Linkedin" title="Clique para acessar meu perfil no Linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/leonardo_aldias/" target="_blank" alt="Ícone do Instagram" title="Clique para acessar meu perfil no Instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+
+        <article id="article-footer">
+            <p id="text-footer">&copy All Rights Reserved - Leonardo-AD</p>
+        </article>
+    </footer>
+</body>
+</html>
