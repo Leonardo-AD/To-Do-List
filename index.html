@@ -14,7 +14,6 @@
     <link rel="shortcut icon" href="./images/to-do-list-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="./script.js"></script>
     <title>To Do List</title>
 </head>
 <body>
@@ -27,15 +26,15 @@
     <main>
         <h2>Adicione itens em sua lista.</h2>
 
-        <form action="#" id="add-items-form">
+        <div id="add-items-form">
             <input type="text" id="text-input" placeholder="Digite algo">
-            <input type="button" id="submit-input" onclick="addItems()" value="Adicionar">
-        </form>
-        
-        <article id="items-list">
-            <span class="material-symbols-outlined" id="checkbox" onclick="checkItem()"></span><p class="item-list" id="item-list"></p>
-            <span class="material-symbols-outlined" id="delete" onclick="deleteItem()"></span>
-        </article>
+            <button id="submit-button">&#43;</button>
+        </div>
+
+        <ul id="items-list">
+            <!--<span class="material-symbols-outlined" id="checkbox" onclick="checkItem()"></span><p class="item-list" id="item-list"></p>
+            <span class="material-symbols-outlined" id="delete" onclick="deleteItem()"></span>-->
+        </ul>
         <!--onclick="checkItem()"  onclick="deleteItem()"-->
     </main>
 
@@ -50,5 +49,6 @@
             <p id="text-footer">&copy All Rights Reserved - Leonardo-AD</p>
         </article>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

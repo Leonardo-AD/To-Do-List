@@ -9,54 +9,41 @@ function changeTheme(){
     }else{
         iconTheme.innerHTML = "nightlight"
     }
-
 }
 
-function addItems(){
-    let checkIcon = document.getElementById("checkbox")
-    let deleteIcon = document.getElementById("delete")
+const listItems = document.querySelector("#items-list") 
+const textBox = document.querySelector("#text-input")
+const addButton = document.querySelector("#submit-button")
 
-    let itemList = document.getElementById("items-list")//article    
-    let itemPrinted = document.getElementById("item-list")//parágrafo
-    let inputText = document.getElementById("text-input").value
-    
-    if(inputText == ""){
+addButton.addEventListener('click', () => {
+    const textToList = textBox.value
+
+    /*if(textToList == ""){
         swal({
-            title: "Não foi possível adicionar", 
-            text: "Digite algo para adicionar em sua lista",
-            icon: "error" 
+            title: 'Não foi possível adicionar', 
+            text: 'Digite algo para adicionar em sua lista',
+            icon: 'error' 
         })
     }else{
-        checkIcon.innerText = "check_box_outline_blank"
-        deleteIcon.innerText = "delete_forever"   
-        
-        //Gerar um novo article
-        //Colocar os ícones e o conteúdo de texto
-        //\n pra quebrar linha?
-        //Você consegue...
-        
-    }
-}
+    }*/
 
-function checkItem(){
-    let checkIcon = document.getElementById("checkbox")
-    let itemPrinted = document.getElementById("item-list")
-    let inputText = document.getElementById("text-input").value
+    textBox.value = ''
+    listItems.appendChild(addTask(textToList))
+    textBox.focus()
+})
 
-    itemPrinted.innerHTML = inputText
-    checkIcon.innerHTML = "done"
-}
-
-function deleteItem(){
-    let deleteItem = document.getElementById("item-list")
-    let deleteIcon = document.getElementById("delete")
-    let checkIcon = document.getElementById("checkbox")
+function addTask(textToList){
+    const elementLi = document.createElement('li')
+    const elementSpan = document.createElement('span')
     
-    let confirmation = confirm("Tem certeza que deseja excluir essa tarefa?")   
-
-    if(confirmation){
-        deleteItem.innerHTML = ""
-        deleteIcon.innerHTML = ""
-        checkIcon.innerHTML = ""
-    }
+    elementSpan.setAttribute('id','task')
+    elementSpan.textContent = textToList
+    
+    elementLi.appendChild(elementSpan)
+    return elementLi;
+    
+    /*else{
+        checkIcon.innerText = "check_box_outline_blank"
+        deleteIcon.innerText = "delete_forever"
+    }*/
 }

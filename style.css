@@ -8,7 +8,7 @@
     --strikethrough-text-color: #cb0324;
     --trash-icon-color: #cb0324;
     --square-icon-color: #c8c8c8;
-    --text-submit-input: #08080e;
+    --text-submit-button: #f1f1f1;
 }
 
 .dark-mode{
@@ -19,6 +19,7 @@
     --footer-section-color: #08080e;
     --trash-icon-color: #d70024;
     --square-icon-color: #494949;
+    --text-submit-button: #08080e;
 }
 
 ::selection{
@@ -92,7 +93,7 @@ h2{
     color: var(--text-color);
 }
 
-form{
+div{
     margin: .6rem 1rem 2rem;
 }
 
@@ -100,7 +101,7 @@ input::placeholder{
     font-size: 1rem;
 }
 
-form #text-input{
+div #text-input{
     width: 16.5rem;
     height: 1.8rem;
     font-size: 1.3rem;
@@ -111,45 +112,44 @@ form #text-input{
     color: var(--text-color);
 }
 
-form #text-input:hover{
+div #text-input:hover{
     border: 1px solid var(--hover-effect-color);
 }
 
-form #submit-input{
-    height: 1.8rem;
-    margin: .3rem 0 0;
-    font-size: 1.2rem;
-    font-weight: 400;
+div #submit-button{
+    font-size: 1.5rem;
+    padding: 0 .4rem;
+    font-weight: bolder;
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
     border-radius: .3rem;
     cursor: pointer;
-    color: var(--text-submit-input);
+    color: var(--text-submit-button);
 }
 
-#submit-input:hover{
+#submit-button:hover{
     background-color: var(--hover-effect-color);
 }
 
-#submit-input:active{
+#submit-button:active{
     background-color: var(--hover-effect-color);
     box-shadow: 0 0.5rem 0.5rem -0.5rem var(--primary-color);
     transform: translateY(0.10rem);
 }
 
-article{
+ul{
     text-align: left;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 0 .5rem 1rem;
+    align-items: left;
 }
 
-#items-list p{
+#items-list li{
     color: var(--text-color);
     font-size: 1.3rem;
     flex: 1;
-    margin: 0 .3rem;
+    margin: .3rem .3rem;
 }
 
 #items-list span#delete{
@@ -167,7 +167,7 @@ article{
 footer{
     display: flex;
     flex-direction: column;
-    height: 4rem;
+    height: 4.2rem;
     background-color: var(--footer-section-color);
     justify-content: center;
     align-items: center;
@@ -177,7 +177,7 @@ footer{
 }
 
 footer div{
-    margin-top: .8rem;
+    margin: 0rem;
 }
 
 footer a{
@@ -193,4 +193,5 @@ footer a:hover{
 footer p{
     color: var(--text-color);
     font-size: 1rem;
+    margin-top: 0.2rem;
 }
