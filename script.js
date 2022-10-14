@@ -18,18 +18,17 @@ const addButton = document.querySelector("#submit-button")
 addButton.addEventListener('click', () => {
     const textToList = textBox.value
 
-    /*if(textToList == ""){
-        swal({
+    if(textToList == ""){
+        swal.fire({
             title: 'Não foi possível adicionar', 
-            text: 'Digite algo para adicionar em sua lista',
+            text: 'Digite algo para adicionar na sua lista',
             icon: 'error' 
         })
     }else{
-    }*/
-
-    textBox.value = ''
-    listItems.appendChild(addTask(textToList))
-    textBox.focus()
+        textBox.value = ''
+        listItems.appendChild(addTask(textToList))
+        textBox.focus()
+    }
 })
 
 function addTask(textToList){
@@ -40,10 +39,23 @@ function addTask(textToList){
     elementSpan.textContent = textToList
     
     elementLi.appendChild(elementSpan)
+    elementLi.appendChild(removeButton())
+
     return elementLi;
-    
-    /*else{
-        checkIcon.innerText = "check_box_outline_blank"
-        deleteIcon.innerText = "delete_forever"
-    }*/
+}
+
+function removeButton(){
+    const removeButton = document.createElement('button')
+    removeButton.setAttribute('id','delete')
+    removeButton.textContent = '✘'
+
+    removeButton.addEventListener('click', function(){
+
+        if(confirm("Deseja excluir essa tarefa?") == true){
+            listItems.removeChild(this.parentNode)
+        }
+
+    })
+    //https://www.toptal.com/designers/htmlarrows/math/
+    return removeButton;
 }

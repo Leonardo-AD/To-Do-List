@@ -118,7 +118,7 @@ div #text-input:hover{
 
 div #submit-button{
     font-size: 1.5rem;
-    padding: 0 .4rem;
+    padding: 0 0.5rem;
     font-weight: bolder;
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
@@ -143,19 +143,24 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    /*list-style: none;*/
 }
 
 #items-list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: var(--text-color);
     font-size: 1.3rem;
-    flex: 1;
-    margin: .3rem .3rem;
+    margin: .4rem .8rem;
 }
 
-#items-list span#delete{
+#delete{
     cursor: pointer;
+    border: none;
     color: var(--trash-icon-color);
-    font-size: 1.2rem;
+    font-size: .8rem;
+    margin-left: .5rem;
 }
 
 #items-list span#checkbox{
@@ -172,7 +177,7 @@ footer{
     justify-content: center;
     align-items: center;
     bottom:0;
-    position:fixed;
+    position:absolute;
     width:100%;
 }
 
