@@ -38,8 +38,19 @@ function addTask(textToList){
     elementSpan.setAttribute('id','task')
     elementSpan.textContent = textToList
     
+    elementLi.className = 'toDo'
     elementLi.appendChild(elementSpan)
     elementLi.appendChild(removeButton())
+
+    elementSpan.addEventListener('click',function(){
+        if(this.id === 'task'){
+            if(this.parentNode.className === 'toDo'){
+                this.parentNode.className = 'done'
+            }else{
+                this.parentNode.className = 'toDo'
+            }
+        }
+    })
 
     return elementLi;
 }
@@ -54,7 +65,6 @@ function removeButton(){
         if(confirm("Deseja excluir essa tarefa?") == true){
             listItems.removeChild(this.parentNode)
         }
-
     })
     //https://www.toptal.com/designers/htmlarrows/math/
     return removeButton;

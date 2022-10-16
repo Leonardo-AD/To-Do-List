@@ -93,8 +93,8 @@ h2{
     color: var(--text-color);
 }
 
-div{
-    margin: .6rem 1rem 2rem;
+#add-items-form{
+    margin: .5rem 1rem 2rem;
 }
 
 input::placeholder{
@@ -118,9 +118,10 @@ div #text-input:hover{
 
 div #submit-button{
     font-size: 1.5rem;
-    padding: 0 0.5rem;
+    width: 1.8rem;
+    padding-right: .5rem;
     font-weight: bolder;
-    border: 1px solid var(--primary-color);
+    border: none;
     background-color: var(--primary-color);
     border-radius: .3rem;
     cursor: pointer;
@@ -143,31 +144,53 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    /*list-style: none;*/
+    
+    max-width: 25rem;
 }
 
-#items-list li{
+/*#items-list li{
+    color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: .3rem .8rem .3rem 0rem;
+}*/
+
+#items-list li.toDo{
+    margin: .2rem .5rem;
+    text-indent: .4rem;
     color: var(--text-color);
-    font-size: 1.3rem;
-    margin: .4rem .8rem;
+    list-style-type:'☐';
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+#items-list li.done{
+    margin: .2rem .5rem;
+    text-indent: .4rem;
+    color: var(--text-color);
+    list-style-type: '☑';
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-decoration: line-through;
+    color: var(--primary-color);
+    text-decoration-color: var(--text-color);
 }
 
 #delete{
+    background-color: var(--background-color);
     cursor: pointer;
     border: none;
     color: var(--trash-icon-color);
-    font-size: .8rem;
-    margin-left: .5rem;
+    font-size: 1rem;
+    margin-left: .8rem;
 }
 
-#items-list span#checkbox{
+/*#items-list span#checkbox{
     cursor: pointer;
     color: var(--primary-color);
     font-size: 1.2rem
-}
+}*/
 
 footer{
     display: flex;
@@ -176,9 +199,10 @@ footer{
     background-color: var(--footer-section-color);
     justify-content: center;
     align-items: center;
-    bottom:0;
-    position:absolute;
+    position:fixed;
+    bottom: 0;
     width:100%;
+    margin: 0;
 }
 
 footer div{
