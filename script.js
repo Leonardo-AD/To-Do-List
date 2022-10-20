@@ -14,6 +14,7 @@ function changeTheme(){
 const listItems = document.querySelector("#items-list") 
 const textBox = document.querySelector("#text-input")
 const addButton = document.querySelector("#submit-button")
+const listOptions = document.querySelector("#listOptions")
 
 addButton.addEventListener('click', () => {
     const textToList = textBox.value
@@ -68,4 +69,14 @@ function removeButton(){
     })
     //https://www.toptal.com/designers/htmlarrows/math/
     return removeButton;
+}
+
+function showListOptions(){
+    const elementSpan = document.querySelector('#task')
+
+    if(elementSpan === null){
+        listOptions.setAttribute('hidden','hidden')
+    }else{
+        listOptions.removeAttribute('hidden')
+    }
 }

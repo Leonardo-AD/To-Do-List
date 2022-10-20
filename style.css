@@ -42,6 +42,7 @@ body{
     width: 100vw;
     height: 100vh;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 header{
@@ -138,26 +139,20 @@ div #submit-button{
     transform: translateY(0.10rem);
 }
 
+#listArea{
+    margin-bottom: 8rem;
+}
+
 ul{
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-    
-    max-width: 25rem;
+    align-items: left;    
 }
 
-/*#items-list li{
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: .3rem .8rem .3rem 0rem;
-}*/
-
 #items-list li.toDo{
-    margin: .2rem .5rem;
+    margin: .2rem 0rem;
     text-indent: .4rem;
     color: var(--text-color);
     list-style-type:'☐';
@@ -166,7 +161,7 @@ ul{
 }
 
 #items-list li.done{
-    margin: .2rem .5rem;
+    margin: .2rem 0rem;
     text-indent: .4rem;
     color: var(--text-color);
     list-style-type: '☑';
