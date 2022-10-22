@@ -28,6 +28,7 @@ addButton.addEventListener('click', () => {
     }else{
         textBox.value = ''
         listItems.appendChild(addTask(textToList))
+        showListOptions()
         textBox.focus()
     }
 })
@@ -60,12 +61,12 @@ function removeButton(){
     const removeButton = document.createElement('button')
     removeButton.setAttribute('id','delete')
     removeButton.textContent = '✘'
+    removeButton.className = 'remove'
 
     removeButton.addEventListener('click', function(){
 
-        if(confirm("Deseja excluir essa tarefa?") == true){
-            listItems.removeChild(this.parentNode)
-        }
+        listItems.removeChild(this.parentNode)
+        showListOptions()
     })
     //https://www.toptal.com/designers/htmlarrows/math/
     return removeButton;
@@ -80,3 +81,20 @@ function showListOptions(){
         listOptions.removeAttribute('hidden')
     }
 }
+
+listOptions.addEventListener('change', function(){
+    
+    if(listOptions.selectedIndex === 1 || listOptions.selectedIndex === 2){
+        const taskVector = document.querySelectorAll('#task')
+
+        for(task of taskVector){
+            task.dispatchEvent(new Event('click'))
+        }
+    }else if(listOptions.selectedIndex === 3){
+        const deleteButtonVector = document.querySelectorAll("#delete")
+
+        for(task of deleteButtonVector){
+            task.dispatchEvent(new Event('click'))
+        }
+    }    
+})
