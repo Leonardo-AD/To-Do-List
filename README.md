@@ -14,9 +14,9 @@
 
 ## Screenshots
 
-<p>Adding an empty task</p>
+<p>Trying to add an empty task</p>
 
-
+![](images/addingEmptyTask.png) 
 
 <p></p>
 
