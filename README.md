@@ -1,6 +1,6 @@
 <h1 align='center'>To-Do-List</h1>
 
-<p>This is just a simple to-do list project to improve my basic knowledge. In this app I am using HTML, CSS, JavaScript and Sweet Alert.</p>
+<p>This is just a simple to do list project to improve my basic knowledge. In this app I am using HTML, CSS, JavaScript and Sweet Alert.</p>
 
 ## Features Developed
 
