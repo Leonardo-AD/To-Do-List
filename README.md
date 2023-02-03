@@ -16,7 +16,7 @@
 
 <p>Trying to add an empty task</p>
 
-<img src="./images/addingEmptyTask.png" widht="500"/> 
+<img src="./images/addingEmptyTask.png" widht="500" height="300"/> 
 
 <p></p>
 
