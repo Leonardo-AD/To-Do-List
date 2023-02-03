@@ -14,11 +14,9 @@
 
 ## Screenshots
 
-<p>Trying to add an empty task</p>
+<p>When trying to add an empty task, an alert from the SweetAlert2 API appears</p>
 
 <img src="./images/addingEmptyTask.png" widht="500" height="500"/> 
-
-<p></p>
 
 ## Technologies
 
