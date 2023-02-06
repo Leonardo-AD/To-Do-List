@@ -18,10 +18,11 @@
 
 <img src="./images/addingEmptyTask.png" widht="500" height="500"/> 
 
+<hr>
 
 <p>Added tasks</p>
 
-<img src="./images/addedTask.png"/>
+<img src="./images/addedTask.png" width="500" height="500"/>
 
 ## Technologies
 
