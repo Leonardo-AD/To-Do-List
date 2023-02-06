@@ -72,7 +72,7 @@ You can access the project by clicking the button below.
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/leonardo-ad"><img src="https://avatars.githubusercontent.com/u/37024336?v=4" style="border-radius: 50%;" width="100px;" height="100px" alt="Autor image"/>
+      <a href="https://github.com/leonardo-ad"><img src="https://avatars.githubusercontent.com/u/37024336?v=4" style="border-radius: 50px;" width="100px;" height="100px" alt="Autor image"/>
       <br/>
       <sub><b>Leonardo Alves Dias</b></sub>
       <br/><br/>
