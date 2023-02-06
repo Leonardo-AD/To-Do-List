@@ -18,7 +18,6 @@
 
 <img src="./images/addingEmptyTask.png" widht="500" height="500"/> 
 
-###
 
 <p>Added tasks</p>
 
