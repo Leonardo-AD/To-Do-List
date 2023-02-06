@@ -48,7 +48,7 @@
 
 <p>On mobile screens</p>
 
-<img src="./images/mobileDarkMode.png" style="margin-right: 50px;"/>      <img src="./images/mobileLightMode.png"/>
+<img src="./images/mobileDarkMode.png"/>      <img src="./images/mobileLightMode.png"/>
 
 ## Technologies
 
@@ -72,7 +72,7 @@ You can access the project by clicking the button below.
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/leonardo-ad"><img src="https://avatars.githubusercontent.com/u/37024336?v=4" style="border-radius: 50%;" width="100px;" alt=""/>
+      <a href="https://github.com/leonardo-ad"><img src="https://avatars.githubusercontent.com/u/37024336?v=4" style="border-radius: 50%;" width="100px;" height="100px" alt="Autor image"/>
       <br/>
       <sub><b>Leonardo Alves Dias</b></sub>
       <br/><br/>
