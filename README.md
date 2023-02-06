@@ -21,7 +21,7 @@
 
 <p>Added tasks</p>
 
-<img src="./images/addedTask.png" widht="500" height="500"/>
+<img src="./images/addedTask.png"/>
 
 ## Technologies
 
