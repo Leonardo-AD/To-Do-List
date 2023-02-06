@@ -32,7 +32,7 @@
 
 <hr>
 
-<p>In the dropdown menu we can check or uncheck all tasks</p>
+<p>In the dropdown menu we can check, uncheck or delete all tasks</p>
 
 <img src="./images/checkAllTasks.png" width="500" height="500"/>
 
@@ -48,8 +48,7 @@
 
 <p>On mobile screens</p>
 
-<img src="./images/mobileDarkMode.png"/>
-<img src="./images/mobileLightMode.png"/>
+<img src="./images/mobileDarkMode.png" width="500" height="500"/> <img src="./images/mobileLightMode.png" width="500" height="500"/>
 
 ## Technologies
 
