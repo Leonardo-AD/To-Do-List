@@ -48,7 +48,7 @@
 
 <p>On mobile screens</p>
 
-<img src="./images/mobileDarkMode.png" padding-right="50px"/>  <img src="./images/mobileLightMode.png"/>
+<img src="./images/mobileDarkMode.png"/>      <img src="./images/mobileLightMode.png"/>
 
 ## Technologies
 
