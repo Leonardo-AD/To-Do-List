@@ -22,7 +22,7 @@
 
 <p>Adding tasks, a dropdown menu appears</p>
 
-<img src="./images/addedTask.png" width="500" height="500"/>
+<img src="./images/addedTask.png" width="500" height="500"/> 
 
 <hr>
 
