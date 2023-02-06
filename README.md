@@ -20,15 +20,23 @@
 
 <hr>
 
-<p>Added tasks</p>
+<p>Adding tasks, a dropdown menu appears</p>
 
 <img src="./images/addedTask.png" width="500" height="500"/>
 
 <hr>
 
-<p>Check a task</p>
+<p>Checking a task, we can delete it by clicking on the X</p>
 
 <img src="./images/checkedTask.png" width="500" height="500"/>
+
+<hr>
+
+<p>In the dropdown menu we can check or uncheck all tasks</p>
+
+<img src="./images/checkAllTasks.png" width="500" height="500"/>
+
+<img src="./images/uncheckAllTasks.png" width="500" height="500"/>
 
 <hr>
 
