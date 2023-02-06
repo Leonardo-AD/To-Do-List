@@ -10,7 +10,7 @@
 - [x] Uncheck all tasks
 - [x] Clear all tasks
 - [x] Dark/Light mode
-- [X] Responsivity
+- [x] Responsivity
 
 ## Screenshots
 
@@ -76,7 +76,7 @@ You can access the project by clicking the button below.
       <br/>
       <sub><b>Leonardo Alves Dias</b></sub>
       <br/><br/>
-      <a href="https://www.linkedin.com/in/leonardo-alves-877368165/"><img src="https://user-images.githubusercontent.com/86114583/192514843-1087a34f-74f9-46aa-94fa-e824950af81f.svg" width="20px"/> <a href="mailto:leonardo.alves779@gmail.com"><img  src="https://user-images.githubusercontent.com/86114583/192515071-4fa6bce6-6ee9-49ca-9395-c17e74075a20.svg" width="20px"/>
+      <a href="https://www.linkedin.com/in/leonardo-alves-877368165/"><img src="https://user-images.githubusercontent.com/86114583/192514843-1087a34f-74f9-46aa-94fa-e824950af81f.svg" width="20px"/> <a href="mailto:leonardo.alves779@gmail.com"><img src="https://user-images.githubusercontent.com/86114583/192515071-4fa6bce6-6ee9-49ca-9395-c17e74075a20.svg" width="20px"/>
       </a>
     </td>
    </tr>
