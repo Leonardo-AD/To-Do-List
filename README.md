@@ -40,6 +40,17 @@
 
 <hr>
 
+<p>We have a light mode and a dark mode, to change just click on the top right icon</p>
+
+<img src="./images/darkMode.png" width="500" height="500"/>
+
+<hr>
+
+<p>On mobile screens</p>
+
+<img src="./images/mobileDarkMode.png"/>
+<img src="./images/mobileLightMode.png"/>
+
 ## Technologies
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
